@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@vant/nuxt':
+        specifier: ^1.0.4
+        version: 1.0.4(rollup@4.17.2)(vant@4.9.0(vue@3.4.27))
       nuxt:
         specifier: ^3.11.2
         version: 3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.12.12)(@unocss/reset@0.60.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.17.2))(vue@3.4.27))(ioredis@5.4.1)(rollup@4.17.2)(terser@5.31.0)(unocss@0.60.2(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.11(@types/node@20.12.12)(terser@5.31.0)))(vite@5.2.11(@types/node@20.12.12)(terser@5.31.0))
@@ -1001,6 +1004,19 @@ packages:
     resolution: {integrity: sha512-+gBjyT5z/aZgPIZxpUbiXyOt1diY9YQfIJStOhBG0MP6daMdDX78SnDuUq/zKMk9EJuZ3FxhbZF5dYSD4bhJmw==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0
+
+  '@vant/nuxt@1.0.4':
+    resolution: {integrity: sha512-NvOndQyk7Y/pSCpNHtqkwv9g60YCj9IxF89aA2InFSKu+9lv2t828yO3XjNJyryabgaFsfz7z1322X4v0uPPUg==}
+    peerDependencies:
+      vant: '>=4'
+
+  '@vant/popperjs@1.3.0':
+    resolution: {integrity: sha512-hB+czUG+aHtjhaEmCJDuXOep0YTZjdlRR+4MSmIFnkCQIxJaXLQdSsR90XWvAI2yvKUI7TCGqR8pQg2RtvkMHw==}
+
+  '@vant/use@1.6.0':
+    resolution: {integrity: sha512-PHHxeAASgiOpSmMjceweIrv2AxDZIkWXyaczksMoWvKV2YAYEhoizRuk/xFnKF+emUIi46TsQ+rvlm/t2BBCfA==}
+    peerDependencies:
+      vue: ^3.0.0
 
   '@vercel/nft@0.26.5':
     resolution: {integrity: sha512-NHxohEqad6Ra/r4lGknO52uc/GrWILXAMs1BB4401GTqww0fw1bAqzpG1XHuDO+dprg4GvsD9ZLLSsdo78p9hQ==}
@@ -2219,6 +2235,10 @@ packages:
     resolution: {integrity: sha512-mxjxZ5zoR4+ybulZ7Z5qdZUTdAfiKJ1Il80kN/I4jWsHTTqNKZ9KsBa3Jepo+3U09I04qiyC2+7MZD8v4rJOoA==}
     engines: {node: '>=16.14.0'}
 
+  magic-string@0.29.0:
+    resolution: {integrity: sha512-WcfidHrDjMY+eLjlU+8OvwREqHwpgCeKVBUpQ3OhYYuvfaYCUgcbuBzappNzZvg/v8onU3oQj+BYpkOJe9Iw4Q==}
+    engines: {node: '>=12'}
+
   magic-string@0.30.10:
     resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
 
@@ -3336,6 +3356,11 @@ packages:
   validate-npm-package-name@5.0.1:
     resolution: {integrity: sha512-OljLrQ9SQdOUqTaQxqL5dEfZWrXExyyWsozYlAWFawPVNuD83igl7uJD2RTkNMbniIYgt8l81eCJGIdQF7avLQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+
+  vant@4.9.0:
+    resolution: {integrity: sha512-VlT7U8KvPaHwoXxHoxCdHcz4+O2yz1Eo3kAZ2EJl6uFClTVzldfZ3nGp+tP2azVrhMetyg+CGfAH667K3Jp+6g==}
+    peerDependencies:
+      vue: ^3.0.0
 
   vite-hot-client@0.2.3:
     resolution: {integrity: sha512-rOGAV7rUlUHX89fP2p2v0A2WWvV3QMX2UYq0fRqsWSvFvev4atHWqjwGoKaZT1VTKyLGk533ecu3eyd0o59CAg==}
@@ -4776,6 +4801,22 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
+  '@vant/nuxt@1.0.4(rollup@4.17.2)(vant@4.9.0(vue@3.4.27))':
+    dependencies:
+      '@nuxt/kit': 3.11.2(rollup@4.17.2)
+      magic-string: 0.29.0
+      unplugin: 1.10.1
+      vant: 4.9.0(vue@3.4.27)
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+
+  '@vant/popperjs@1.3.0': {}
+
+  '@vant/use@1.6.0(vue@3.4.27)':
+    dependencies:
+      vue: 3.4.27
+
   '@vercel/nft@0.26.5(encoding@0.1.13)':
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.11(encoding@0.1.13)
@@ -6103,6 +6144,10 @@ snapshots:
   magic-string-ast@0.5.0:
     dependencies:
       magic-string: 0.30.10
+
+  magic-string@0.29.0:
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.15
 
   magic-string@0.30.10:
     dependencies:
@@ -7472,6 +7517,13 @@ snapshots:
       spdx-expression-parse: 3.0.1
 
   validate-npm-package-name@5.0.1: {}
+
+  vant@4.9.0(vue@3.4.27):
+    dependencies:
+      '@vant/popperjs': 1.3.0
+      '@vant/use': 1.6.0(vue@3.4.27)
+      '@vue/shared': 3.4.27
+      vue: 3.4.27
 
   vite-hot-client@0.2.3(vite@5.2.11(@types/node@20.12.12)(terser@5.31.0)):
     dependencies:

@@ -17,3 +17,10 @@ useSeoMeta({
   keywords: 'B站,bilibili,哔哩哔哩,哔哩哔哩动画,动漫,电影,在线动漫,高清电影' // 搜索关键词，权重相对较低
 }) 
 </script>
+
+<style>
+/* CSS 变量设置组件库主题 */
+:root{
+  --van-primary-color: #FB7299 !important;
+}
+</style>
